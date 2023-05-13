@@ -1,12 +1,6 @@
 const key = 'fef71557e6445a92858b4237152e9604';
 // get ip to calculate the location
-fetch('https://api.ipify.org?format=json')
-  .then(response => response.json())
-  .then(data => {
-    const ipAddress = data.ip;
-    console.log(ipAddress)
-    // use the ip to get lat and lon
-    fetch(`http://ip-api.com/json/${ipAddress}`)
+    fetch(`http://ip-api.com/json/`)
       .then(response => response.json())
       .then(data => {
         const { lat, lon } = data;
@@ -27,4 +21,3 @@ fetch('https://api.ipify.org?format=json')
             console.log(weather)
           });
       });
-  });
