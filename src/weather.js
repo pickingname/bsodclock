@@ -1,11 +1,20 @@
-require('dotenv').config();
-
-const key = process.env.OPEN_WEATHER_MAP_API_KEY;
-console.log(key)
-const openWeatherMapApiKey = process.env.OPEN_WEATHER_MAP_API_KEY;
-        // get!111!!!1
-        console.debug('fetching weather')
-        fetch(`https://api.openweathermap.org/data/2.5/weather?lat=13.668217&lon=100.614021&appid=${openWeatherMapApiKey}&units=metric`)
+const key = 'fef71557e6445a92858b4237152e9604';
+// get ip to calculate the location
+fetch('https://api.ipify.org?format=json')
+  .then(response => response.json())
+  .then(data => {
+    const ipAddress = data.ip;
+    console.log(ipAddress)
+    // use the ip to get lat and lon
+    fetch(`http://ip-api.com/json/${ipAddress}`)
+      .then(response => response.json())
+      .then(data => {
+        const { lat, lon } = data;
+        console.debug(lat)
+        console.debug(lon)
+        // Finally, use the retrieved latitude and longitude to make the OpenWeatherAPI request
+        const key = 'fef71557e6445a92858b4237152e9604';
+        fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=metric`)
           .then(response => response.json())
           .then(data => {
             const { weather, main } = data;
@@ -17,3 +26,5 @@ const openWeatherMapApiKey = process.env.OPEN_WEATHER_MAP_API_KEY;
             console.debug('done fetching weather')
             console.log(weather)
           });
+      });
+  });
