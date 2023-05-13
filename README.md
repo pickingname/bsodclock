@@ -19,8 +19,10 @@ pnpm i && pnpm dev
 
 ---
 
-### what does it looks like? 
-<h5>fullscreen using `F12`</h5>
+### what does it looks like?
+
+
+##### fullscreen using `F12`
 
 ![image](https://github.com/pickingname/bsodclock/assets/115550149/8f605fca-7049-4c6c-bc89-67528704fab7)
 
