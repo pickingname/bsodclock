@@ -1,4 +1,8 @@
-const openWeatherMapApiKey = 'fef71557e6445a92858b4237152e9604';
+require('dotenv').config();
+
+const key = process.env.OPEN_WEATHER_MAP_API_KEY;
+console.log(key)
+const openWeatherMapApiKey = process.env.OPEN_WEATHER_MAP_API_KEY;
         // get!111!!!1
         console.debug('fetching weather')
         fetch(`https://api.openweathermap.org/data/2.5/weather?lat=13.668217&lon=100.614021&appid=${openWeatherMapApiKey}&units=metric`)
