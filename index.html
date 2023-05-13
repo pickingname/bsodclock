@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="/images/logo-with-shadow.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="/src/style.css"/>
+    <script src="/src/main.js"></script>
+    <title>BSODCLOCK</title>
+  </head>
+  <body class="min-h-screen antialiased">
+    <main style="font: Segoe UI;">
+      <div id="page">
+        <div id="container">
+          <h1>:(</h1>
+          <h2>Your Device ran into a problem and needs to restart. We're just collecting some error info, and then we'll restart for
+            you.</h2>
+          <h2>
+            <span id="daypercent"></h2>
+          <div id="details">
+            <div id="qr">
+              <div id="image">
+                <img src="things/yes.png" alt="QR Code" />
+              </div>
+            </div>
+            <div id="stopcode">
+              <h5 id="time">
+              </h5>
+              <h5 id="weather"></h5>
+            </h5>
+            <h5 id="currentdate"></h5>
+          </h5>
+          <h5>For more information, visit http://www.windows.com/stopcode</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="/src/time.js"></script>
+    <script src="/src/weather.js" type="module"></script>
+    <script src="/src/date.js"></script>
+  </body>
+</html>
