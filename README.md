@@ -32,5 +32,6 @@ the percent progress is actually synced with time of the day, 0% = 0:00 | 50% = 
 
 ### the future
 
-- i will try to make the weather change based on users location using geolocation api
-- i will not provide the openweathermap api key
+- [x] i will try to make the weather change based on users location using geolocation api
+
+- [ ] try not to have openweatherapi in the js
