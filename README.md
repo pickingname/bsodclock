@@ -26,3 +26,8 @@ pnpm i && pnpm dev
 the percent progress is actually synced with time of the day, 0% = 0:00 | 50% = 12:00 | 100% = 23:59
 
 ---
+
+### the future
+
+- i will try to make the weather change based on users location using geolocation api
+- i will not provide the openweathermap api key
