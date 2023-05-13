@@ -4,7 +4,8 @@ function updateTime() {
     var minute = now.getMinutes();
     var second = now.getSeconds();
     var timeString = hour.toString().padStart(2, '0') + ":" + minute.toString().padStart(2, '0') + ":" + second.toString().padStart(2, '0');
-    document.getElementById("time").innerHTML = timeString;
+    var ampm = hour >= 12 ? "PM" : "AM";
+    document.getElementById("time").innerHTML = timeString + " " + ampm;
 }
 
 // Call updateTime() once to display the initial time
