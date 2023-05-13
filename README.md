@@ -15,7 +15,7 @@ pnpm i && pnpm dev
 
 ### credits
 
-[this](https://codepen.io/xontab/pen/JrVaYR) codepen and [this](https://github.com/sadman-shami/vite-tailwind-boilerplate) vite, tailwindcss template
+[this](https://codepen.io/xontab/pen/JrVaYR) codepen and [this](https://github.com/sadman-shami/vite-tailwind-boilerplate) vite + tailwindcss template
 
 ---
 
