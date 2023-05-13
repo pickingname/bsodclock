@@ -21,7 +21,7 @@ pnpm i && pnpm dev
 
 ### what does it looks like?
 
-![image](https://github.com/pickingname/bsodclock/assets/115550149/e6b588c2-43b3-4e67-96f7-fb460a59eb6f)
+![image](https://github.com/pickingname/bsodclock/assets/115550149/8f605fca-7049-4c6c-bc89-67528704fab7)
 
 the percent progress is actually synced with time of the day, 0% = 0:00 | 50% = 12:00 | 100% = 23:59
 
